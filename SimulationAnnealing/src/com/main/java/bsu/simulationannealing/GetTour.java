@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class GetTour {
 
-    private static ArrayList destinationCities = new ArrayList<City>();
+    private static ArrayList destCities = new ArrayList<City>();
 
     public static void addCity(City city) {
-        destinationCities.add(city);
+        destCities.add(city);
     }
 
     public static City getCity(int index){
-        return (City)destinationCities.get(index);
+        return (City)destCities.get(index);
     }
 
     public static int numberOfCities(){
-        return destinationCities.size();
+        return destCities.size();
     }
 }
